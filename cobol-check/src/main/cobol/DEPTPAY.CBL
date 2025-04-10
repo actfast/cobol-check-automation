@@ -1,6 +1,5 @@
        IDENTIFICATION DIVISION.
        PROGRAM-ID. DEPTPAY.
-
        DATA DIVISION.
        WORKING-STORAGE SECTION.
        01  DEPT-RECORD.
@@ -12,12 +11,10 @@
            05  DEPT-NBR-EMPS        PIC 9(3).
            05  DEPT-TOTAL-SALARIES  PIC 9(7)V99.
            05  DEPT-AVG-SALARY      PIC 9(7)V99.
-
        PROCEDURE DIVISION.
-       PERFORM AVERAGE-SALARY.
-       PERFORM DISPLAY-DETAILS.
+           PERFORM AVERAGE-SALARY.
+           PERFORM DISPLAY-DETAILS.
            STOP RUN.
-
        AVERAGE-SALARY.
            MOVE "FINANCE"           TO DEPT-NAME.
            MOVE "SOUTHWEST"         TO DEPT-LOC.
@@ -27,7 +24,7 @@
            MOVE 111111.11           TO DEPT-TOTAL-SALARIES.
            COMPUTE DEPT-AVG-SALARY =
                 (DEPT-TOTAL-SALARIES / DEPT-NBR-EMPS).
-
+      *****
        DISPLAY-DETAILS.
            DISPLAY "Department Name: " DEPT-NAME.
            DISPLAY "Department Location: " DEPT-LOC.
