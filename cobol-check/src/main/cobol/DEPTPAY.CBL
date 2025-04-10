@@ -14,9 +14,9 @@
            05  DEPT-AVG-SALARY      PIC 9(7)V99.
 
        PROCEDURE DIVISION.
-           PERFORM AVERAGE-SALARY.
-           PERFORM DISPLAY-DETAILS.
-           STOP RUN.
+       PERFORM AVERAGE-SALARY.
+       PERFORM DISPLAY-DETAILS.
+       STOP RUN.
 
        AVERAGE-SALARY.
            MOVE "FINANCE"           TO DEPT-NAME.
