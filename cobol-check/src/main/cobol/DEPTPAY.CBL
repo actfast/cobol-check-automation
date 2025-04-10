@@ -16,7 +16,7 @@
        PROCEDURE DIVISION.
        PERFORM AVERAGE-SALARY.
        PERFORM DISPLAY-DETAILS.
-       STOP RUN.
+           STOP RUN.
 
        AVERAGE-SALARY.
            MOVE "FINANCE"           TO DEPT-NAME.
