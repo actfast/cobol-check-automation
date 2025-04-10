@@ -15,6 +15,7 @@
            PERFORM AVERAGE-SALARY.
            PERFORM DISPLAY-DETAILS.
            STOP RUN.
+
        AVERAGE-SALARY.
            MOVE "FINANCE"           TO DEPT-NAME.
            MOVE "SOUTHWEST"         TO DEPT-LOC.
