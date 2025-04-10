@@ -1,9 +1,9 @@
-      IDENTIFICATION DIVISION.
-      PROGRAM-ID. DEPTPAY.
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. DEPTPAY.
 
-      DATA DIVISION.
-      WORKING-STORAGE SECTION.
-      01  DEPT-RECORD.
+       DATA DIVISION.
+       WORKING-STORAGE SECTION.
+       01  DEPT-RECORD.
            05  DEPT-NAME            PIC X(20).
            05  DEPT-LOC             PIC X(12).
            05  DEPT-MANAGER.
@@ -13,12 +13,12 @@
            05  DEPT-TOTAL-SALARIES  PIC 9(7)V99.
            05  DEPT-AVG-SALARY      PIC 9(7)V99.
 
-      PROCEDURE DIVISION.
+       PROCEDURE DIVISION.
            PERFORM AVERAGE-SALARY.
            PERFORM DISPLAY-DETAILS.
            STOP RUN.
 
-      AVERAGE-SALARY.
+       AVERAGE-SALARY.
            MOVE "FINANCE"           TO DEPT-NAME.
            MOVE "SOUTHWEST"         TO DEPT-LOC.
            MOVE "Millard"           TO MANAGER-FNAME.
@@ -28,7 +28,7 @@
            COMPUTE DEPT-AVG-SALARY =
                 (DEPT-TOTAL-SALARIES / DEPT-NBR-EMPS).
 
-      DISPLAY-DETAILS.
+       DISPLAY-DETAILS.
            DISPLAY "Department Name: " DEPT-NAME.
            DISPLAY "Department Location: " DEPT-LOC.
            DISPLAY "Manager FNAME: " MANAGER-FNAME.
